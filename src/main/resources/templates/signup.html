@@ -57,19 +57,19 @@
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="login-area">
+                                <form class="login-area" method="post" action="/auth/login">
                                     <div class="row align-items-center">
                                         <div class="col-12 col-sm">
-                                            <input type="text" placeholder="Email or Userame" class="single-field">
+                                            <input id="username" name="username" type="text" placeholder="Email or Userame" class="single-field">
                                         </div>
                                         <div class="col-12 col-sm">
-                                            <input type="password" placeholder="Password" class="single-field">
+                                            <input id="password" name="password" type="password" placeholder="Password" class="single-field">
                                         </div>
                                         <div class="col-12 col-sm-auto">
-                                            <button class="login-btn">Login</button>
+                                            <button class="login-btn" type="submit">Login</button>
                                         </div>
                                     </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>
