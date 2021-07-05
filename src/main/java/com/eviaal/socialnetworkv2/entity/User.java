@@ -5,11 +5,21 @@ import lombok.Data;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 @Entity
 @Data
 @Table(name = "users")
 public class User implements Serializable {
+
+    {
+        role = Role.USER;
+        status = Status.ACTIVE;
+        timeRegistration = Timestamp.valueOf(LocalDateTime.now());
+    }
+
+
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
